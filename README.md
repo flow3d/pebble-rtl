@@ -17,6 +17,5 @@ After changing the code:
 - your home baked apk is at output-apks/bla.apk, not sorry for the name :)
 
 ### Other stuff
-The patch is currently manual, you can automate it (find it by references to BluetoothSocket)
+The patch is supposed to be automatic, but it was never tested :)
 In this version - the file to patch is: com/getpebble/android/b/c/e.smali
-look for "mypatch"
