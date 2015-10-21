@@ -1,7 +1,22 @@
 # pebble-rtl
 Patch pebble's apk to support RTL languages
 
-### What should I change?
+# How to contribute?
+
+Currently I document the open issues here, if there'll be enough of them - we'll move to something more managed :)
+
+## Open Issues
+### RTL
+- Sentences beginning with RTL text are wrong (should be resolved by passing the default orientation to the Bidi class and resolving the crashes that will arise)
+- Line splitting by word separator (currently dumb)
+- Line splitting by actual character width (currently dumb)
+- Line splitting by font size (requires extra research)  
+
+### Protocol
+- RTL canned responsed (currently they're LTR)
+
+
+## What to change?
 
 Open the playground-app in Android Studio
 
@@ -17,5 +32,5 @@ After changing the code:
 - your home baked apk is at output-apks/bla.apk, not sorry for the name :)
 
 ### Other stuff
-The patch is supposed to be automatic, but it was never tested :)
+The patch is supposed to be automatic, but it was never tested :)  
 In this version - the file to patch is: com/getpebble/android/b/c/e.smali
