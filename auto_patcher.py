@@ -85,7 +85,7 @@ def attempt_patch(pebble_apk_path, pg_apk_path, patch_package,
         return -1
 
     # patch output stream
-    print "Found matching class, now looking for relevant function..."
+    print "Found matching class, now looking for relevant functions..."
     if output_wrapper:
         output_wrapper = '%s/%s' % (patch_package, output_wrapper)
         cont = matches[0].open().read()
@@ -107,6 +107,7 @@ def attempt_patch(pebble_apk_path, pg_apk_path, patch_package,
 
         cont = cont.replace(output_stream_matches[0], patch_method(output_stream_matches[0], input_wrapper))
         matches[0].open(mode='w').write(cont)
+    print "Done."
 
 
 def main():
