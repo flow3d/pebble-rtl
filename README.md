@@ -10,7 +10,8 @@ Currently I document the open issues here, if there'll be enough of them - we'll
 - Sentences beginning with RTL text are wrong (should be resolved by passing the default orientation to the Bidi class and resolving the crashes that will arise)
 - Line splitting by word separator (currently dumb)
 - Line splitting by actual character width (currently dumb)
-- Line splitting by font size (requires extra research)  
+- Line splitting by font size (requires extra research)
+- Try to align text to the right by padding with spaces  
 
 ### Protocol
 - RTL canned responsed (currently they're LTR)
