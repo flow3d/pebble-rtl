@@ -36,4 +36,12 @@
         android:layout_below="@+id/lineLimiter"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:id="@+id/notificationButton"
+        android:layout_below="@+id/lineLimiterDisplay"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
