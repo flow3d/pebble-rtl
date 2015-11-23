@@ -51,7 +51,8 @@ public class TextReverser {
         boolean skipChar = false;
         boolean skippedLineBreak = false;
         int skipCount = 0;
-        // line breaks take priority
+
+        // line breaks take priority (we always want to strip white spaces around them)
         for (int i = start; i < lineEnd; i++) {
             if (input.charAt(i) == '\n') {
                 skipChar = true;
@@ -67,6 +68,7 @@ public class TextReverser {
         }
 
         // no line break found, search for a white space
+        // TODO: add support for non-whitespace separators (line '-', '+' etc...)
         boolean shouldStop = false;
         for (int currentChar = lineEnd - 1; (currentChar > start) && (!shouldStop); currentChar--) {
             switch (input.charAt(currentChar)) {
