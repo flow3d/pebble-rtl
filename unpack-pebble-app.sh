@@ -1,5 +1,7 @@
 #!/bin/bash
 
-VERSION=3.8.1-942-b60f188
+FILENAME=`ls -t1 input-apks/ | head -n 1`
 
-./apktool-files/apktool d -v -p apktool-files/framework -o pebble-unpacked-apk input-apks/com.getpebble.android.basalt-$VERSION.apk
+echo "Unpacking (the most recent file I found): $FILENAME"
+
+./apktool-files/apktool d -v -p apktool-files/framework -o pebble-unpacked-apk input-apks/$FILENAME
