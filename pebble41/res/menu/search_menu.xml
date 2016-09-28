@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_search" android:id="@id/search_item" android:title="@string/actionbar_search" android:showAsAction="always|collapseActionView" android:actionViewClass="android.widget.SearchView" />
+</menu>

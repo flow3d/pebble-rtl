@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/onboarding_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/onboarding_new_text_size" android:textColor="@color/white" android:id="@id/dropdown_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/onboarding_spinner_dropdown_item_margin" />
+    <View android:id="@id/dropdown_separator" android:background="@color/onboarding_background_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

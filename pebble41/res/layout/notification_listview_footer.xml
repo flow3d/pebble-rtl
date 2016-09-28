@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/android_app_view_label_textSize_small" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:padding="@dimen/android_app_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_app_view_label_marginLeft" android:text="@string/my_pebble_notifications_info_message" />
+    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/android_app_view_label_textSize_small" android:textColor="@color/material_orange" android:gravity="center_vertical" android:layout_gravity="center" android:paddingLeft="@dimen/android_app_view_padding" android:paddingBottom="@dimen/android_app_view_footer_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_app_view_label_marginLeft" android:text="@string/my_pebble_notifications_view_all_message" android:singleLine="false" />
+</LinearLayout>

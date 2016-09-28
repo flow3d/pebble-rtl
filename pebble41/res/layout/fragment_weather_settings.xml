@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/weather_settings_scroll_container" android:background="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/weather_settings" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/my_pebble_weather_settings_selected_gray" android:gravity="center_vertical" android:id="@id/units" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" android:layout_marginLeft="@dimen/my_pebble_dashboard_margin" android:text="@string/weather_units" />
+        <View android:id="@id/line_0" android:background="@color/holo_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioGroup android:id="@id/units_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/units_celsius" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" layout="@layout/units_radio_button" />
+            <View android:id="@id/line_1" android:background="@color/holo_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <include android:id="@id/units_fahrenheit" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" layout="@layout/units_radio_button" />
+            <View android:id="@id/line_2" android:background="@color/holo_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <include android:id="@id/units_mixed" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" layout="@layout/units_radio_button" />
+        </RadioGroup>
+        <View android:id="@id/line_3" android:background="@color/holo_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/my_pebble_weather_settings_selected_gray" android:gravity="center_vertical" android:id="@id/primary_location" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" android:layout_marginLeft="@dimen/my_pebble_dashboard_margin" android:text="@string/weather_primary_location" />
+        <View android:id="@id/line_4" android:background="@color/holo_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/my_pebble_weather_settings_selected_gray" android:gravity="center_vertical" android:id="@id/other_locations" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" android:layout_marginLeft="@dimen/my_pebble_dashboard_margin" android:text="@string/weather_other_locations" />
+        <View android:id="@id/line_under_other_locations" android:background="@color/holo_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.getpebble.android.widget.PebbleButton android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/orange_actionbar_color" android:gravity="center_vertical" android:id="@id/add_more_locations" android:background="@drawable/btn_explicit_white_background" android:paddingLeft="@dimen/my_pebble_dashboard_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" android:text="@string/weather_add_more_locations" android:maxLines="1" android:singleLine="true" android:textAllCaps="false" />
+        <com.getpebble.android.widget.PebbleButton android:textColor="@color/white" android:gravity="center" android:id="@id/weather_location_disabled_button" android:background="@drawable/btn_red_circular_states" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/my_pebble_location_disabled_margin" android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

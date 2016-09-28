@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Charts</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <script src="assets/boot.js"></script>
+  </head>
+  <body onload="js.bootCharts()">
+    <table class="navbar">
+      <tr>
+        <td class="navbar-previous">&laquo;</td>
+        <td class="navbar-caption"><span></span></td>
+        <td class="navbar-next" style="opacity:0">&raquo;</td>
+      </tr>
+    </table>
+    <div class="wrapper">
+      <div id="header" class="header" style="visibility:hidden;">
+        <div class="stat-title">&nbsp;</div>
+        <div class="stat-value">&nbsp;</div>
+        <div class="stat-typical"><span>&nbsp;</span></div>
+      </div>
+      <div id="alt-header" class="header stat-row" style="display:none"></div>
+      <div id="header-compact" class="header header-compact stat-row" style="display:none"></div>
+      <svg id="graph"></svg>
+      <div class="naps" style="display:none;"></div>
+      <div id="no-data-banner">
+        <table>
+          <tr>
+            <td>
+              <div class="message-title"></div>
+              <div class="message-body"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer stat-row stat-row-1">
+      <div class="stat">
+        <div class="stat-title">&nbsp;</div>
+        <div class="stat-value">
+          <span class="stat-part-amount">&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

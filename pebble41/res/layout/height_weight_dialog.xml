@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/height_weight_dialog_margin" android:paddingTop="@dimen/height_weight_dialog_margin" android:paddingRight="@dimen/height_weight_dialog_margin" android:paddingBottom="@dimen/height_weight_dialog_margin_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/height_weight_dialog_label_text_size" android:id="@id/units_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height_weight_dialog_label_units" />
+    <Spinner android:id="@id/units_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/height_weight_dialog_margin" android:layout_below="@id/units_label" />
+    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/height_weight_dialog_label_text_size" android:id="@id/value_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height_weight_dialog_label_value" android:layout_below="@id/units_spinner" />
+    <EditText android:id="@id/single_value_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="3" android:layout_below="@id/value_label" android:inputType="number" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/feet_inches_input_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/value_label">
+        <EditText android:gravity="end" android:id="@id/feet_input" android:nextFocusRight="@id/inches_input" android:layout_width="@dimen/height_weight_dialog_feet_inches_input_width" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="1" android:inputType="number" android:imeOptions="actionNext" />
+        <com.getpebble.android.widget.PebbleTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height_weight_dialog_label_feet" />
+        <EditText android:gravity="end" android:id="@id/inches_input" android:layout_width="@dimen/height_weight_dialog_feet_inches_input_width" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="2" android:inputType="number" />
+        <com.getpebble.android.widget.PebbleTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height_weight_dialog_label_inches" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#00000000" />
+            <stroke android:width="1.0dip" android:color="@color/black" />
+            <corners android:radius="@dimen/my_pebble_dashboard_hearts_outline_corner_size" />
+            <size android:height="@dimen/my_pebble_dashboard_likes_height" android:width="@dimen/my_pebble_dashboard_likes_width" />
+        </shape>
+    </item>
+</selector>

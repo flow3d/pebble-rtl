@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dark_gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/switch_section" android:background="@color/dark_gray_2" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.getpebble.android.widget.PebbleTextView android:textColor="@color/white" android:id="@id/connection_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_disabled" android:layout_weight="9.0" />
+        <Switch android:id="@id/connection_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/developer_linear_layout_margin_left_right">
+        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_connection_status_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/connection_status" android:padding="@dimen/developer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/menu_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/developer_divider_height" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/developer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_text_size" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_server_ip" />
+            <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_text_size" android:textColor="@color/white" android:gravity="right" android:id="@id/server_ip_addr" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/menu_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/developer_divider_height" android:layout_marginLeft="@dimen/developer_padding" android:layout_marginRight="@dimen/developer_padding" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/developer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_text_size" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_conn_manager" />
+            <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_text_size" android:textColor="@color/white" android:gravity="right" android:id="@id/conn_mgr_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/menu_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/developer_divider_height" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/developer_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_text_size" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_cloudpebble" />
+            <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/developer_text_size" android:textColor="@color/white" android:gravity="right" android:id="@id/proxy_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/menu_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/developer_divider_height" />
+    </LinearLayout>
+</LinearLayout>

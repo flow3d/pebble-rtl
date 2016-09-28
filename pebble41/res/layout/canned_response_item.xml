@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/canned_reorder_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/list_reorder_lines" android:tint="@color/black" />
+    <com.getpebble.android.view.ClearableEditText android:textSize="@dimen/canned_response_text_size" android:textColorHint="@color/gray" android:id="@id/response" android:paddingBottom="@dimen/canned_response_padding" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="60.0dip" android:hint="@string/canned_responses_hint" android:maxLines="1" android:singleLine="true" android:maxLength="@integer/max_chars_canned_response" />
+</LinearLayout>

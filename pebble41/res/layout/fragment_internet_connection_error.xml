@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dark_gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/connectionErrorImage" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illustration_sad_cloud" android:scaleType="fitCenter" android:contentDescription="@string/no_internet_connection" />
+    <com.getpebble.android.widget.PebbleTextView android:textColor="@color/white" android:gravity="center" android:id="@id/textConnectionErrorTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_internet_connection" style="@style/OnboardStyle" />
+    <com.getpebble.android.widget.PebbleTextView android:gravity="center" android:id="@id/textConnectionErrorSubtitle" android:padding="@dimen/no_internet_connection_subtext_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_internet_connection_subtext" style="@style/OnboardStyle.Small" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/refreshLayout" android:padding="@dimen/android_app_view_label_textSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/refreshImage" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_refresh" />
+        <com.getpebble.android.widget.PebbleTextView android:gravity="center" android:id="@id/tapToRefreshTextView" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_internet_connection_refresh" style="@style/OnboardStyle.Medium" />
+    </LinearLayout>
+</LinearLayout>

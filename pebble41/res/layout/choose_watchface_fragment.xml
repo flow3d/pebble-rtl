@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/choose_watchface_onboarding_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/choose_watchface_onboarding_title" android:text="@string/onboarding_choose_watchface" android:layout_alignParentTop="true" android:layout_centerInParent="true" style="@style/OnboardBanner" />
+        <ImageButton android:id="@id/choose_watchface_continue_button" android:contentDescription="@string/onboarding_choose_watchface_continue" style="@style/OnboardForwardButton" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/watchfaces_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

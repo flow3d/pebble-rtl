@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/btn_explicit_white_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/weather_location_moveable_icon" android:background="@drawable/list_reorder_lines_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/my_pebble_dashboard_margin" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/my_pebble_row_height" android:layout_marginLeft="@dimen/my_pebble_dashboard_margin" android:layout_marginRight="@dimen/my_pebble_dashboard_margin" android:layout_weight="1.0">
+        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/location_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawablePadding="@dimen/my_pebble_dashboard_margin" />
+    </FrameLayout>
+    <com.getpebble.android.widget.PebbleButton android:layout_gravity="center_vertical" android:id="@id/delete_weather_location" android:background="@drawable/cross_icon" android:padding="@dimen/weather_list_item_close_margin" android:clickable="true" android:layout_width="@dimen/my_pebble_weather_delete_icon_size" android:layout_height="@dimen/my_pebble_weather_delete_icon_size" android:layout_marginRight="@dimen/weather_list_item_margin" />
+</LinearLayout>

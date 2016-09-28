@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:background="@color/onboarding_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.getpebble.android.widget.PebbleTextView android:id="@id/onboarding_banner" android:text="@string/onboarding_migration_agreement_banner" android:layout_alignParentTop="true" style="@style/OnboardBanner" />
+    <ImageView android:id="@id/watch_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/fu_timeline_tintin" android:layout_below="@id/onboarding_banner" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <com.getpebble.android.widget.PebbleButton android:id="@id/update_my_pebble_button" android:layout_marginBottom="10.0dip" android:text="@string/onbording_update_my_pebble" style="@style/OnboardOrangeButtonCustom" />
+        <com.getpebble.android.widget.PebbleButton android:id="@id/get_pebble_classic_button" android:text="@string/onbording_get_pebble_classic" style="@style/OnboardOrangeButtonCustomGray" />
+    </LinearLayout>
+    <com.getpebble.android.widget.PebbleTextView android:textSize="16.0sp" android:textColor="@color/light_gray_alt3" android:gravity="center" android:id="@id/model_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:minHeight="50.0sp" android:text="@string/onboarding_migration_agreement_msg" android:layout_above="@id/button_area" android:layout_below="@id/watch_image" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/webview_onboarding_banner" android:visibility="gone" style="@style/OnboardBannerLayout">
+        <ImageButton android:id="@id/webview_back_button" android:background="@drawable/onboarding_back_button_states" android:paddingLeft="@dimen/onboarding_skip_padding" android:paddingRight="@dimen/onboarding_skip_padding" android:layout_width="wrap_content" android:layout_height="@dimen/onboarding_banner_height" android:src="@drawable/ic_menu_back" android:layout_alignParentLeft="true" />
+        <TextView android:id="@id/onboarding_banner_text" android:layout_width="wrap_content" android:text="@string/onboarding_pebble_account_title" android:layout_centerInParent="true" style="@style/OnboardBanner" />
+    </RelativeLayout>
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/webview_onboarding_banner" android:layout_alignWithParentIfMissing="true" />
+    <ProgressBar android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

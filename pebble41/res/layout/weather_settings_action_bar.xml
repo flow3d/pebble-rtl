@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/autocomplete_edittext" android:background="@color/orange_actionbar_color" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/my_pebble_search_bar_margin_right" android:hint="@string/weather_action_bar_enter_city_name" android:singleLine="true" android:drawableLeft="@drawable/icon_search" android:drawablePadding="@dimen/my_pebble_dashboard_margin" android:layout_centerVertical="true" android:textCursorDrawable="@null" />
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/my_pebble_search_city_line_margin_top" android:layout_marginRight="@dimen/my_pebble_search_bar_margin_right" android:layout_below="@id/autocomplete_edittext" />
+</RelativeLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.getpebble.android.basalt" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.REGISTER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.getpebble.android.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.getpebble.android.gcm.permission.C2D_MESSAGE"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.NETWORK" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.GPS" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:maxRecents="1" android:name="com.getpebble.android.PebbleApplication" android:process=":ui" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pebble"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbz"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbz"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbz"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbz"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbw"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbw"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbw"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbw"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbl"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbl"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.pbl"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.pbl"/>
+                <data android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/pbl"/>
+                <data android:mimeType="application/pbw"/>
+                <data android:mimeType="application/pbz"/>
+                <data android:mimeType="application/octet-stream"/>
+                <data android:mimeType="application/pebble-bundle"/>
+                <data android:scheme="content"/>
+                <data android:host="downloads"/>
+                <data android:host="gmail-ls"/>
+                <data android:host="com.google.android.apps.bigtop"/>
+                <data android:host="com.android.email.attachmentprovider"/>
+                <data android:host="com.mailboxapp.attachment.provider"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.getpebble.android.onboarding.activity.OnboardingActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:name="com.getpebble.android.main.sections.settings.activity.OpenSourceLicensesActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.settings.activity.LanguageSelectionActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.support.activity.NotificationDemoActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:label="@string/support_check_updates" android:launchMode="singleInstance" android:name="com.getpebble.android.main.sections.support.activity.FirmwareUpdateActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.activity.SettingsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.support.activity.SupportHelpdeskActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.activity.SupportActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.activity.AllAppsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.activity.DeveloperConnectionActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:label="@string/actionbar_manage_connection" android:name="com.getpebble.android.main.activity.ConnectionManagerActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.notifications.activity.IncomingCallCannedResponsesActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.notifications.activity.CannedResponsesActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.fontpack.activity.AdditionalFontPackActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.getpebble.android.ui.UpdateActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:name="com.getpebble.android.main.sections.settings.activity.ChooseLanguageActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:name="com.getpebble.android.framework.jskit.AppSettingsActivity" android:process=":framework">
+            <intent-filter>
+                <action android:name="com.getpebble.jskit.android.action.LAUNCH_APP_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.getpebble.android.main.sections.mypebble.activity.SmsSettingsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.getpebble.android.main.activity.NoConnectivityActivity" android:parentActivityName="com.getpebble.android.main.activity.SupportActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.SupportActivity"/>
+        </activity>
+        <service android:name="com.getpebble.android.core.auth.account.PebbleAuthenticationService" android:process=":framework">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="true" android:name="com.getpebble.android.core.sync.PebbleSyncService" android:process=":framework">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"/>
+        </service>
+        <receiver android:name="com.getpebble.android.core.receiver.PebbleBootBroadcastReceiver" android:process=":framework">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.getpebble.android.basalt.internal.provider" android:exported="false" android:name="com.getpebble.android.core.provider.PebbleContentProvider" android:process=":framework" android:syncable="true"/>
+        <provider android:authorities="@string/file_provider_authority" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <service android:label="@string/app_name" android:name="com.getpebble.android.notifications.PblNotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:process=":framework">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:label="@string/app_name" android:name="com.getpebble.android.notifications.PblNotificationSideChannelService" android:process=":framework">
+            <intent-filter>
+                <action android:name="android.support.BIND_NOTIFICATION_SIDE_CHANNEL"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.getpebble.android.framework.PebbleFrameworkService" android:process=":framework"/>
+        <service android:exported="false" android:name="com.getpebble.android.framework.analytics.WatchAnalytics" android:process=":framework"/>
+        <service android:exported="false" android:name="com.getpebble.android.framework.location.PebbleLocationService" android:process=":framework"/>
+        <service android:exported="false" android:name="com.getpebble.android.framework.timeline.TimelineWebSyncService" android:process=":framework"/>
+        <service android:exported="false" android:name="com.getpebble.android.framework.health.HealthDataReceiver" android:process=":framework"/>
+        <service android:exported="true" android:name="com.getpebble.android.framework.service.TaskService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:process=":framework">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.getpebble.android.framework.health.HealthMLSAggregationService" android:process=":framework"/>
+        <service android:exported="false" android:name="com.getpebble.android.framework.gcm.PebbleGcmListenerService" android:process=":framework">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.getpebble.android.framework.gcm.PebbleInstanceIDService" android:process=":framework">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.getpebble.android.framework.gcm.RegistrationIntentService" android:process=":framework"/>
+        <service android:exported="false" android:name="com.getpebble.android.framework.service.LocaleChangedService" android:process=":framework"/>
+        <provider android:authorities="com.getpebble.android.provider.basalt" android:exported="true" android:name="com.getpebble.android.framework.pebblekit.PebbleKitProvider" android:process=":framework"/>
+        <activity android:label="@string/my_pebble_calendar" android:name="com.getpebble.android.main.sections.mypebble.activity.CalendarSettingsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:label="@string/weather" android:name="com.getpebble.android.main.sections.mypebble.activity.WeatherSettingsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:label="@string/notices" android:name="com.getpebble.android.main.sections.mypebble.activity.MobileAlertsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:label="@string/weather" android:name="com.getpebble.android.main.sections.mypebble.activity.WeatherMoreLocationsActivity" android:parentActivityName="com.getpebble.android.main.sections.mypebble.activity.WeatherSettingsActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.sections.mypebble.activity.WeatherSettingsActivity"/>
+        </activity>
+        <activity android:label="@string/health_settings_title" android:name="com.getpebble.android.main.sections.mypebble.activity.HealthSettingsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <activity android:label="@string/reminders_settings_title" android:name="com.getpebble.android.main.sections.mypebble.activity.RemindersSettingsActivity" android:parentActivityName="com.getpebble.android.main.activity.MainActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.getpebble.android.main.activity.MainActivity"/>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/gms_version"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.getpebble.android.basalt.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity"/>
+        <activity android:name="net.hockeyapp.android.PaintActivity"/>
+        <activity android:name="net.hockeyapp.android.LoginActivity"/>
+        <activity android:name="net.hockeyapp.android.ExpiryInfoActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/base_layout_include" android:background="@color/dark_gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tap_to_connect_bottom_bar" layout="@layout/tap_to_connect_bottom_bar" />
+    <FrameLayout android:id="@id/grp_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tap_to_connect_bottom_bar" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

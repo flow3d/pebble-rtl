@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/nav_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/search_universal_sv" android:paddingTop="9.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <android.support.v7.widget.CardView android:id="@id/search_watchfaces" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/my_pebble_tab_color" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/search_watchfaces_card_height">
+                    <LinearLayout android:orientation="horizontal" android:background="@color/dark_gray_3" android:layout_width="fill_parent" android:layout_height="@dimen/search_result_header_height">
+                        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/search_result_header_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/search_title_watchfaces" android:paddingLeft="@dimen/search_result_drawable_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/my_pebble_watchfaces" android:drawableLeft="@drawable/watchfaces_tab" android:drawablePadding="@dimen/search_result_drawable_padding" android:layout_weight="1.0" />
+                        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/search_result_item_secondary_text_size" android:textColor="@color/dark_gray_1" android:gravity="center_vertical" android:id="@id/search_watchfaces_see_all" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_see_more" android:textAllCaps="true" />
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@id/search_watchfaces_rv" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:id="@id/search_notifications" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/my_pebble_tab_color" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/search_result_header_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/search_title_notifications" android:background="@color/dark_gray_3" android:paddingLeft="@dimen/search_result_drawable_padding" android:layout_width="fill_parent" android:layout_height="@dimen/search_result_header_height" android:text="@string/my_pebble_notifications_tab_title" android:drawableLeft="@drawable/notifications_tab" android:drawablePadding="@dimen/search_result_drawable_padding" />
+                    <android.support.v7.widget.RecyclerView android:id="@id/search_notifications_rv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:id="@id/search_apps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" card_view:cardBackgroundColor="@color/my_pebble_tab_color" card_view:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@color/dark_gray_3" android:layout_width="fill_parent" android:layout_height="@dimen/search_result_header_height">
+                        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/search_result_header_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/search_title_apps" android:paddingLeft="@dimen/search_result_drawable_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/search_section_watchapps" android:drawableLeft="@drawable/apps_tab" android:drawablePadding="@dimen/search_result_drawable_padding" android:layout_weight="1.0" />
+                        <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/search_result_item_secondary_text_size" android:textColor="@color/dark_gray_1" android:gravity="center_vertical" android:id="@id/search_apps_see_all" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_see_more" android:textAllCaps="true" />
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@id/search_apps_rv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <ListView android:id="@id/search_trending_lv" android:background="@color/nav_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/search_no_results" android:background="@color/nav_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/search_no_results_icon_size" android:layout_height="@dimen/search_no_results_icon_size" android:src="@drawable/icon_search" android:alpha="0.5" />
+        <com.getpebble.android.widget.PebbleTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/search_no_results" android:alpha="0.5" />
+    </LinearLayout>
+</FrameLayout>

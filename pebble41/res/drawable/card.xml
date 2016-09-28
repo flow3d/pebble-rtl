@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:dither="true" android:shape="rectangle">
+            <corners android:radius="5.0dip" />
+            <solid android:color="@color/onboarding_grab_apps_card_bg" />
+        </shape>
+    </item>
+    <item android:bottom="2.0dip">
+        <shape android:dither="true" android:shape="rectangle">
+            <corners android:radius="5.0dip" />
+            <solid android:color="@color/onboarding_grab_apps_card_bg" />
+            <padding android:left="8.0dip" android:top="8.0dip" android:right="8.0dip" android:bottom="8.0dip" />
+        </shape>
+    </item>
+</layer-list>

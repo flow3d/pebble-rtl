@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-0.5dip" android:top="-0.5dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/my_pebble_background_gray" />
+            <stroke android:width="0.25dip" android:color="@color/my_pebble_grid_border_color" />
+        </shape>
+    </item>
+</layer-list>

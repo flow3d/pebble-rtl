@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pebble="http://schemas.android.com/apk/res-auto">
+    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/languages_list_selected_item_text_size" android:textColor="@color/black" android:gravity="start" android:id="@id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/languages_list_selected_item_padding" android:layout_marginTop="@dimen/languages_list_selected_item_margin" android:layout_marginRight="@dimen/languages_list_selected_item_padding" android:layout_marginBottom="@dimen/languages_list_selected_item_margin" android:singleLine="true" android:layout_toLeftOf="@id/language_checkmark" android:layout_alignParentLeft="true" pebble:text_typeface="PFDinDisplayPro_Light" />
+    <ImageView android:id="@id/language_checkmark" android:paddingRight="@dimen/languages_list_selected_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grid_checkmark_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

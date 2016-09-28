@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragment_enable_fit_sync" android:background="@color/onboarding_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.getpebble.android.widget.PebbleTextView android:id="@id/enable_insights_onboarding_banner" android:text="@string/onboarding_enable_insights_title" android:layout_alignParentTop="true" style="@style/OnboardBanner" />
+    <ImageView android:id="@id/fit_sync_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onboarding_activity_tracking_margin_large" android:layout_marginBottom="@dimen/onboarding_activity_tracking_margin_large" android:src="@drawable/fu_synchealth" android:layout_below="@id/enable_insights_onboarding_banner" android:layout_centerHorizontal="true" />
+    <com.getpebble.android.widget.PebbleTextView android:id="@id/insights_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onboarding_text_margin_left_right" android:layout_marginRight="@dimen/onboarding_text_margin_left_right" android:layout_marginBottom="@dimen/onboarding_enable_text_margin_bottom" android:text="@string/onboarding_enable_insights_explanation" android:layout_below="@id/fit_sync_icon" style="@style/OnboardStyle.Medium" />
+    <Switch android:id="@id/activity_insights_switch" android:text="@string/onboarding_enable_activity_insights_text" android:layout_centerVertical="true" style="@style/HealthOnboardingSwitch" />
+    <View android:id="@id/divider_1" android:layout_below="@id/activity_insights_switch" style="@style/OnboardDivider" />
+    <Switch android:id="@id/sleep_insights_switch" android:text="@string/onboarding_enable_sleep_insights_text" android:layout_below="@id/divider_1" style="@style/HealthOnboardingSwitch" />
+    <View android:id="@id/divider_2" android:layout_below="@id/sleep_insights_switch" style="@style/OnboardDivider" />
+    <Switch android:id="@id/fit_sync_switch" android:text="@string/onboarding_enable_fit_sync_text" android:layout_below="@id/divider_2" style="@style/HealthOnboardingSwitch" />
+    <Button android:id="@id/continue_button" android:layout_marginTop="@dimen/onboarding_red_button_margin_bottom" android:text="@string/onboarding_insights_continue_button" android:layout_alignParentBottom="true" style="@style/OnboardOrangeButton" />
+</RelativeLayout>

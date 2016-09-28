@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/red" />
+            <corners android:radius="@dimen/my_pebble_no_locations_warning_button_size" />
+        </shape>
+    </item>
+</selector>
