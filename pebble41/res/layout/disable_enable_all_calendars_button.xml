@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.getpebble.android.widget.PebbleButton android:textSize="@dimen/onboarding_new_text_size" android:textColor="@color/white" android:id="@id/calendar_settings_footer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/calendar_enable_disable_margin" android:text="@string/calendar_disable_all" style="@style/OnboardOrangeButton" />
-</LinearLayout>

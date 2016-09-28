@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/tap_to_connect_bottom_bar" layout="@layout/tap_to_connect_bottom_bar" />
-    <fragment android:name="com.getpebble.android.main.sections.mypebble.fragment.CalendarSettingsFragment" android:id="@id/fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tap_to_connect_bottom_bar" android:layout_alignWithParentIfMissing="true" />
-</RelativeLayout>

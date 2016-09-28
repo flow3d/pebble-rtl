@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RadioButton android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/black" android:gravity="center_vertical" android:background="@drawable/btn_explicit_white_background" android:paddingLeft="@dimen/my_pebble_dashboard_margin" android:paddingRight="@dimen/weather_list_item_margin" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height" android:button="@null" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/btn_radio_unchecked_custom" android:textAllCaps="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

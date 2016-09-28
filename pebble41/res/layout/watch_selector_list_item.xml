@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/watch_selector_fg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="16.0sp" android:textColor="@color/watch_selector_text" android:gravity="center" android:id="@id/watch_name" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/watch_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

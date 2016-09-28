@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/onboarding_grab_apps_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/choose_apps_onboarding_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:id="@id/choose_apps_onboarding_title" android:text="@string/onboarding_grab_apps" android:layout_alignParentTop="true" android:layout_centerInParent="true" style="@style/OnboardBanner" />
-        <ImageButton android:id="@id/continue_arrow" android:contentDescription="@string/onboarding_choose_watchface_continue" style="@style/OnboardForwardButton" />
-    </RelativeLayout>
-    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/apps_list_view" android:padding="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="12.0dip" />
-</LinearLayout>

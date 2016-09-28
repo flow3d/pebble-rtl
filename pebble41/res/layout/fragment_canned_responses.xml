@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/canned_response_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/canned_response_text_size" android:id="@id/header" android:paddingBottom="@dimen/canned_response_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/canned_responses_header" />
-    <android.support.v7.widget.RecyclerView android:id="@id/my_recycler_view" android:paddingBottom="@dimen/canned_response_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-    <com.getpebble.android.widget.PebbleButton android:layout_gravity="center" android:id="@id/btn_reset" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/canned_responses_reset" style="@style/GrayButton" />
-</LinearLayout>

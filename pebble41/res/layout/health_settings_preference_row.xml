@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/health_setting_background_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/health_settings_preference_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/health_settings_preference_text_size" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/health_settings_margin_horizontal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/health_settings_preference_text_size" android:textColor="@color/default_orange_color" android:id="@id/value_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/health_settings_margin_horizontal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

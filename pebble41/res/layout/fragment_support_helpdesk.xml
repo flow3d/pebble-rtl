@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_alignParentBottom="true" />
-    <EditText android:gravity="top" android:id="@id/email_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/helpdesk_prompt_hint" android:layout_above="@id/ok" android:layout_alignParentTop="true" android:inputType="textMultiLine" />
-</RelativeLayout>

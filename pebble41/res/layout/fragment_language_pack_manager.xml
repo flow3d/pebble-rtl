@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/onboarding_banner" android:text="@string/languages_banner" android:layout_alignParentTop="true" style="@style/OnboardBanner" />
-    <ListView android:layout_gravity="center" android:id="@id/lv_item_list" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/languages_list_fragment_layout_margin" android:divider="@color/gray" android:dividerHeight="1.0dip" android:layout_below="@id/onboarding_banner" android:layout_alignWithParentIfMissing="true" />
-</RelativeLayout>

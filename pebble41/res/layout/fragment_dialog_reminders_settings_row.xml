@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/my_pebble_row_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/calendar_colour" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
-    <RadioButton android:id="@id/reminders_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/my_pebble_dashboard_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <com.getpebble.android.widget.PebbleTextView android:textSize="@dimen/my_pebble_dashboard_text_size" android:textColor="@color/black" android:id="@id/calendar_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/my_pebble_dashboard_margin" android:layout_toLeftOf="@id/reminders_radio" android:layout_toRightOf="@id/calendar_colour" android:layout_centerVertical="true" />
-</RelativeLayout>
