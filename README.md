@@ -16,6 +16,22 @@ Currently I document the open issues here, if there'll be enough of them - we'll
 ### Protocol
 - RTL canned responsed (currently they're LTR)
 
+## Pre-requirements
+ - [APKtool](https://ibotpeaches.github.io/Apktool/install/)
+ - [Python 2.7](https://www.python.org/downloads/)
+ - [Android SDK](https://developer.android.com/studio/index.html?hl=eo)
+ - I tested it on a Linux machine but you should be able to compile on a Mac too
+
+## How to build RTL apk
+ `$ git clone https://github.com/rosenpin/pebble-rtl`
+ 
+ `$ cd pebble-rtl`
+ 
+ `$ ./configure.sh`
+ 
+ Edit `playground-app/local.properties` and change `sdk.dir` to your SDK directory
+ 
+ `$ ./compile.sh`
 
 ## What to change?
 
