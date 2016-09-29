@@ -2,6 +2,8 @@
 
 set -e
 
-./apktool-files/apktool b -f -p ./apktool-files/framework -o output-apks/bla.apk pebble-unpacked-apk
+apktool b -f pebble-unpacked-apk -o output/$FILENAME
 # where do I get jarsigner from?
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore keystore/keystore.jks -storepass 123456 output-apks/bla.apk bla
+FILENAME=`ls -t1 input-apks/ | head -n 1`
+jarsigner -verbose -keystore keystore/keystore.jks -storepass 123456 output/$FILENAME bla
+

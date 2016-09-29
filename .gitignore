@@ -1,5 +1,6 @@
 pebble-unpacked-apk/
 playground-unpacked-apk/
-
+/output
+/playground-app
 *.apk
 
