@@ -44,7 +44,7 @@ After changing the code:
 - run "build-pg-app.sh"
 - run "unpack-pg-app.sh"
 - run "unpack-pebble-app.sh"
-- run ./auto_patcher.py (defaults are good, but check out --help)
+- run python2.7 auto_patcher.py (defaults are good, but check out --help)
 - run "generate-apk.sh"
 - your home baked apk is at output-apks/bla.apk, not sorry for the name :)
 
